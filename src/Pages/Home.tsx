@@ -125,20 +125,20 @@ const Main = () => {
                   <div className="w-[105px] mobile-below:w-[79px] text-center">4000р</div>
                 </div>
                 <div className="flex flex-row justify-between my-[20px] mobile-below:my-[10px]">
-                  <div className="">Подарочный сертификат на 4 занятия</div>
-                  <div className="w-[105px] mobile-below:w-[79px] text-center">2200р</div>
-                </div>  
-                <div className="flex flex-row justify-between my-[20px] mobile-below:my-[10px]">
-                  <div className="">Абонемент на 4 занятия скайл</div>
+                  <div className="">Абонемент на 4 занятия скайкл</div>
                   <div className="w-[105px] mobile-below:w-[79px] text-center">2400р</div>
                 </div>
                 <div className="flex flex-row justify-between my-[20px] mobile-below:my-[10px]">
-                  <div className="">Скайл тренировка разовое</div>
+                  <div className="">Сайкл тренировка разовое</div>
                   <div className="w-[105px] mobile-below:w-[79px] text-center">750р</div>
                 </div>  
-                <div className="flex flex-row justify-between my-[20px] mobile-below:my-[10px]">
-                  <div className="">Подарочный сертификат на 8 занятий</div>
-                  <div className="w-[105px] mobile-below:w-[79px] text-center">4000р</div>
+                <div className="flex flex-row justify-between items-center my-[20px] mobile-below:my-[10px]">
+                  <div className="">Подарочные сертификаты</div>
+                  <div className="w-[105px] mobile-below:w-[79px] text-center leading-[40px]">
+                    3000р
+                    5000р
+                    10000р
+                  </div>
                 </div>
                 <div className="flex flex-row justify-between mt-[20px] mobile-below:mt-[10px]">
                   <div className="">Мини-группа (3-4 человека)</div>

@@ -13,8 +13,6 @@ const user = new UserStore()
 export const API_URL = process.env.API_URL ? process.env.API_URL : 'http://176.57.218.115:8080/api'
 export const REACT_APP_FILE_PATH = process.env.REACT_APP_FILE_PATH ? process.env.REACT_APP_FILE_PATH : 'http://176.57.218.115:8080/files'
 
-console.log(process.env, process.env.NODE_ENV, 'watafak')
-
 export const Context = createContext<State>({
   user
 })

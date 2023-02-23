@@ -57,11 +57,9 @@ class LessonsStore {
     if(lesson) {
       this.filterLessons('title', lesson)
     }
-    console.log(this.trainings)
   }
 
   filterLessons(type: string, value: string) {
-    console.log(type)
     this.lessons = this.lessons.map((item) => {
       Object.keys(item.lessons).forEach((key) => {
         if(item.lessons[key]) {
@@ -70,7 +68,6 @@ class LessonsStore {
       })
       return item
     })
-    console.log(this.lessons)
   }
 
   clearFilter() {
@@ -102,7 +99,6 @@ class LessonsStore {
     const resp = await LessonService.getByWeek(currentWeek)
     this.setWeekDays(resp.data.weekDays)
     this.setLessons(resp.data.trainings)
-    console.log(resp.data.trainings)
   }
 
   async getAdminPlannedLessons() {

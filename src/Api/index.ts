@@ -2,8 +2,6 @@ import axios from 'axios'
 import { AuthResponse } from '../Types/ResponseTypes/AuthResponse'
 import { ENV } from '../Utils/environment'
 
-console.log(ENV)
-
 const $api = axios.create({
   withCredentials: true,
   baseURL: ENV.API_URL

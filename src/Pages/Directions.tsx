@@ -11,9 +11,6 @@ const Lessons = () => {
       .then(res => {
         setLessons(res.data)
       })
-      .finally(() => {
-        console.log('finally')
-      })
   }, [])
 
   return (

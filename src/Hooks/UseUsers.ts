@@ -22,7 +22,6 @@ export const useUsers = () => {
   const setDefaultUsers = async () => {
     UserService.fetchUsers()
       .then(res => {
-        console.log(res.data, 'data')
         setUsers(res.data)
       })
   }

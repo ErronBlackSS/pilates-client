@@ -7,6 +7,8 @@ import { useInput } from '../../Hooks/UseInput'
 import { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { RESPONSE_STATUSES } from '../../Utils/error_statuses'
+import { ButtonColors } from '../../Utils/constance'
+import Button from '../Common/Button'
 
 const RegistationForm: FC = () => {
   
@@ -36,12 +38,17 @@ const RegistationForm: FC = () => {
   const onSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault()
     const response = await user.registration(name.value, lastname.value, phone.value, email.value, password.value)
+    console.log(response, 'CHTO TI VIDAL?')
     if (response.status === RESPONSE_STATUSES.SUCCESS) {
       setFormSended(true)
       setActivateLink(response.activate_link)
     } else {
       setErrorMessage(response.message)
     }
+  }
+
+  const activate = () => {
+    window.location.href = activateLink
   }
 
   return (
@@ -51,7 +58,14 @@ const RegistationForm: FC = () => {
           <div
             className="w-[300px] h-[300px] flex flex-col justify-center items-center"
           >
-            Для активации аккаунта перейдите по ссылке - <a href={activateLink}> Активировать </a>
+            Для активации аккаунта перейдите по нажмите кнопку Активировать
+            <Button
+              className="py-[5px] px-[10px] mt-[10px]"
+              color={ButtonColors.bordo}
+              handler={activate}
+            >
+              Активировать
+            </Button>
           </div>
           :
           <div className="text-left min-w-[300px]">

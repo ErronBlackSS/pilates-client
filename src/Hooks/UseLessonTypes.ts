@@ -14,7 +14,6 @@ export const useLessonTypes = () => {
 
   const getLessonTypes = async () => {
     const resp = await LessonTypesService.getAll()
-    console.log(resp.data, 'ltypes')
     setLessonTypes(resp.data)
   }
 

@@ -12,7 +12,6 @@ const App: FC = () => {
     if (localStorage.getItem('token')) {
       user.checkAuth()
     }
-    console.log(user)
   }, [user])
 
   return (

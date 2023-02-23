@@ -9,7 +9,6 @@ interface IWatchDescription {
 const WatchDescription: FC<IWatchDescription> = ({ lessonId }) => {
 
   const currentLesson = LessonsStore.lessons.find(lesson => lesson.lesson_id === lessonId)
-  console.log(LessonsStore.lessons)
   return (
     <div
       className="flex text-left max-w-[600px]"

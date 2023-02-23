@@ -5,7 +5,7 @@ const EmptyLessons = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-[20px]">
       <div className="w-[144px] h-[144px] flex justify-center items-center">
-        <img src={`${ENV.REACT_APP_FILE_PATH}/girl.png'`} alt="mainImage" />
+        <img src={`${ENV.REACT_APP_FILE_PATH}/girl.png`} alt="mainImage" />
       </div>
       <div>
         <p>
