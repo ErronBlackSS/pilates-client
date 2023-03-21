@@ -61,14 +61,15 @@ const UpdateTrainerInfoForm : FC<IUpdateTrainerInfoForm> = ({ trainerId, setShow
 
   return (
     <div
-      className="flex justify-center text-left w-[500px]"
+      className="flex text-left justify-center w-full"
     >
       <form
+        className="overflow-y-scroll"
         onSubmit={onSubmit}
       >
-        <div className="mt-4 flex-col md:gap-1 xl:gap-3 align-baseline">
+        <div className="mt-4 flex-col md:gap-1 xl:gap-3 align-baseline max-h-[500px]">
           <div className="flex flex-col gap-[25px]">
-            <div className="flex flex-row gap-[20px]">
+            <div className="flex flex-row mobile-below:flex-col gap-[20px] overflow-y-scroll">
               <div className="flex w-full flex-col gap-[7px]">
                 <label
                   className="block text-[12px] leading-[15px] text-[#000000]"
@@ -94,7 +95,7 @@ const UpdateTrainerInfoForm : FC<IUpdateTrainerInfoForm> = ({ trainerId, setShow
                 />
               </div>
             </div>
-            <div className="flex flex-row gap-[20px]">
+            <div className="flex flex-row mobile-below:flex-col gap-[20px]">
               <div className="flex w-full flex-col gap-[7px]">
                 <label
                   className="block text-[12px] leading-[15px] text-[#000000]"
@@ -133,13 +134,13 @@ const UpdateTrainerInfoForm : FC<IUpdateTrainerInfoForm> = ({ trainerId, setShow
               />
             </div>
           </div>
-        </div>
-        <button
-          type="submit"
-          className="w-[100%] px-6 py-2 mt-4 text-[#fff] cursor-pointer rounded-[10px] bg-bordo"
-        >
+          <button
+            type="submit"
+            className="w-[100%] px-6 py-2 mt-4 text-[#fff] cursor-pointer rounded-[10px] bg-bordo"
+          >
           Применить
-        </button>
+          </button>
+        </div>
       </form>
     </div>
   )    

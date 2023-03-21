@@ -125,7 +125,7 @@ const Main = () => {
                   <div className="w-[105px] mobile-below:w-[79px] text-center">4000р</div>
                 </div>
                 <div className="flex flex-row justify-between my-[20px] mobile-below:my-[10px]">
-                  <div className="">Абонемент на 4 занятия скайкл</div>
+                  <div className="">Абонемент на 4 занятия сайкл</div>
                   <div className="w-[105px] mobile-below:w-[79px] text-center">2400р</div>
                 </div>
                 <div className="flex flex-row justify-between my-[20px] mobile-below:my-[10px]">

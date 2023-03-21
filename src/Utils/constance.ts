@@ -21,9 +21,9 @@ export enum ROLES {
 }
 
 export enum ButtonColors {
-  bordo = ' outline outline-bordo bg-bordo text-[#FEFAFA] text-[14px]',
-  white = ' outline-none outline-[#1B1B1B] outline-[1px] bg-white text-[#1B1B1B] text-[14px]',
+  bordo = ' border border-bordo py-[4px] bg-bordo text-[#FEFAFA] text-[14px]',
+  white = ' border border-[#1B1B1B] py-[4px] bg-white text-[#1B1B1B] text-[14px]',
   red = ' outline-none outline-[#FF2E00] outline-[1px] bg-white text-[#FF2E00] text-[14px]',
-  borderless = ' bg-white text-[#1B1B1B] text-[14px]',
-  bordo_direcitons = 'outline bg-bordo text-[#FEFAFA]'
+  borderless = ' outline-none bg-white text-[#1B1B1B] text-[14px]',
+  bordo_direcitons = 'outline-none outline bg-bordo text-[#FEFAFA]'
 }

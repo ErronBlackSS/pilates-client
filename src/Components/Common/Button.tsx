@@ -4,7 +4,7 @@ import { IButton } from '../../Types/Common/Button'
 const Button: FC<IButton> = ({ handler, className, children, color, fullWidth, disabled }) => {
 
   const buttonStyles = 
-    'cursor-pointer rounded-[9px]' +
+    'cursor-pointer rounded-[9px] ' +
     (fullWidth ? ' w-full' : '') +
     (disabled ? ' opacity-40' : '') +
     (color ? color : '') +
